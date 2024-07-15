@@ -133,7 +133,7 @@ def compute_metrics(start_logits, end_logits, features, examples):
     theoretical_answers = [{"id": ex["id"], "answers": ex["answers"]} for ex in examples]
     return metric.compute(predictions=predicted_answers, references=theoretical_answers)
 
-api_token = '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'
+api_token = 'API_token'
 login(api_token)
 
 model_checkpoint = "nlpaueb/legal-bert-base-uncased"
