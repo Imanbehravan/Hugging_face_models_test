@@ -151,7 +151,7 @@ def preprocess_validation_examples(examples):
     inputs["example_id"] = example_ids
     return inputs
 
-api_token = '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'
+api_token = 'API_token'
 login(api_token)
 
 model_checkpoint = "deepset/roberta-base-squad2"
